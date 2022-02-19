@@ -13,3 +13,18 @@ C:\Users\nguye\Desktop\Thuật toán ứng dụng\Xep lich\Xep lich\obj\Debug\ne
 C:\Users\nguye\Desktop\Thuật toán ứng dụng\Xep lich\Xep lich\obj\Debug\net6.0\ref\Xep lich.dll
 C:\Users\nguye\Desktop\Thuật toán ứng dụng\Xep lich\Xep lich\obj\Debug\net6.0\Xep lich.pdb
 C:\Users\nguye\Desktop\Thuật toán ứng dụng\Xep lich\Xep lich\obj\Debug\net6.0\Xep lich.genruntimeconfig.cache
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\Xep lich.exe
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\Xep lich.deps.json
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\Xep lich.runtimeconfig.json
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\Xep lich.dll
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\ref\Xep lich.dll
+C:\Users\tuann\Desktop\Xeplich\Xep lich\bin\Debug\net6.0\Xep lich.pdb
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.csproj.AssemblyReference.cache
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.AssemblyInfoInputs.cache
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.AssemblyInfo.cs
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.csproj.CoreCompileInputs.cache
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.dll
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\ref\Xep lich.dll
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.pdb
+C:\Users\tuann\Desktop\Xeplich\Xep lich\obj\Debug\net6.0\Xep lich.genruntimeconfig.cache

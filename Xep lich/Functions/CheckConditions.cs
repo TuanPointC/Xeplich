@@ -35,13 +35,14 @@ namespace Xep_lich.Functions
             var hourStart = startHourString?[..^1].Split(":")[0];
             var minuteStart = startHourString?[0..^1].Split(":")[1];
             var typeStart = startHourString?[^1];
-            if (typeStart == 'a')
+            if (typeStart != 'a' && hourStart!="12")
             {
-                result[0] = Convert.ToDouble(hourStart) + Convert.ToDouble(minuteStart) / 60;
+                result[0] = Convert.ToDouble(hourStart) + 12 + Convert.ToDouble(minuteStart) / 60;
+
             }
             else
             {
-                result[0] = Convert.ToDouble(hourStart) + 12 + Convert.ToDouble(minuteStart) / 60;
+                result[0] = Convert.ToDouble(hourStart) + Convert.ToDouble(minuteStart) / 60;
             }
 
             // get end hour
@@ -49,13 +50,13 @@ namespace Xep_lich.Functions
             var hourEnd = endHourString?[..^1].Split(":")[0];
             var minuteEnd = endHourString?[0..^1].Split(":")[1];
             var typeEnd = endHourString?[^1];
-            if (typeEnd == 'a')
+            if (typeStart != 'a' && hourStart != "12")
             {
-                result[1] = Convert.ToDouble(hourEnd) + Convert.ToDouble(minuteEnd) / 60;
+                result[1] = Convert.ToDouble(hourEnd) + 12 + Convert.ToDouble(minuteEnd) / 60;
             }
             else
             {
-                result[1] = Convert.ToDouble(hourEnd) + 12 + Convert.ToDouble(minuteEnd) / 60;
+                result[1] = Convert.ToDouble(hourEnd) + Convert.ToDouble(minuteEnd) / 60;
             }
             return result;
         }
@@ -72,33 +73,43 @@ namespace Xep_lich.Functions
             // if 2 classes is not same week
             if (weekOfClass1[0] >= weekOfClass2[1] || weekOfClass1[1] <= weekOfClass2[0])
             {
-                return false;
+                return true;
             }
 
             // if 2 classes is not same day
             if (class1.Day != class2.Day)
             {
-                return false;
+                return true;
             }
 
             // check hour
             if (hourOfClass1[0] >= hourOfClass2[1] || hourOfClass1[1] <= hourOfClass2[0])
             {
-                return false;
+                return true;
             }
 
-
-            return true;
+            Console.WriteLine($"2 lop vi pham Li Thuyet: {class1.Course} -{class1.Itype} {class1.Section} {hourOfClass1[0]}:{hourOfClass1[1]} ____{class2.Course} -{class2.Itype} {class2.Section} {hourOfClass2[0]}:{hourOfClass2[1]}");
+            return false;
         }
 
         private static bool CheckTheoryAndPractice(IEnumerable<ClassInfo> sol, ClassInfo newClass)
         {
             var theoryClass = sol.FirstOrDefault(c => c.Course == newClass.Course);
-            if ((theoryClass?.Section + 1) != newClass.Section && (theoryClass?.Section + 2) != newClass.Section)
+            if (theoryClass?.Section == 1)
             {
-                return false;
+                if (newClass?.Section == 1 || newClass?.Section == 2)
+                {
+                    return true;
+                }
             }
-            return true;
+            else
+            {
+                if (newClass?.Section == 3 || newClass?.Section == 4)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         public bool CheckAll(IEnumerable<ClassInfo> sol, ClassInfo newClass)
         {

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguye\\Desktop\\Thuật toán ứng dụng\\Xep lich\\Xep lich\\Xep lich.csproj": {}
+    "C:\\Users\\tuann\\Desktop\\Xeplich\\Xep lich\\Xep lich.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguye\\Desktop\\Thuật toán ứng dụng\\Xep lich\\Xep lich\\Xep lich.csproj": {
+    "C:\\Users\\tuann\\Desktop\\Xeplich\\Xep lich\\Xep lich.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguye\\Desktop\\Thuật toán ứng dụng\\Xep lich\\Xep lich\\Xep lich.csproj",
+        "projectUniqueName": "C:\\Users\\tuann\\Desktop\\Xeplich\\Xep lich\\Xep lich.csproj",
         "projectName": "Xep lich",
-        "projectPath": "C:\\Users\\nguye\\Desktop\\Thuật toán ứng dụng\\Xep lich\\Xep lich\\Xep lich.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguye\\Desktop\\Thuật toán ứng dụng\\Xep lich\\Xep lich\\obj\\",
+        "projectPath": "C:\\Users\\tuann\\Desktop\\Xeplich\\Xep lich\\Xep lich.csproj",
+        "packagesPath": "C:\\Users\\tuann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tuann\\Desktop\\Xeplich\\Xep lich\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tuann\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.phenikaa.online/repository/nuget-hosted/index.json": {}
         },
         "frameworks": {
           "net6.0": {
